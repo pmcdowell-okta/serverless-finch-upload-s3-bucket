@@ -1,0 +1,16 @@
+service:
+  name: myService
+
+provider:
+  name: aws
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: erasemeanytime
+    distributionFolder: client/dist 
+    indexDocument: index.html 
+    errorDocument: error.html 
+
